@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStart</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            padding: 20px;
+            background: #151d34;
+            color: #9baaff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main { padding: 70px 20px; }
+
+        h1 { font-size: 45px; }
+
+        span { color: #8b9cff; }
+
+        p { color: #b8c2d8; }
+
+        button {
+            padding: 12px 24px;
+            background: #7285ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            background: #151d34;
+            padding: 25px;
+            border-radius: 12px;
+            width: 200px;
+        }
+
+        footer {
+            padding: 15px;
+            background: #151d34;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>WebStart.</nav>
+
+    <main>
+        <h1>Build Your <span>Future</span></h1>
+        <p>Explore technology, create projects, and bring your ideas to life.</p>
+        <button onclick="welcome()">Get Started</button>
+        <p id="message"></p>
+    </main>
+
+    <div class="cards">
+        <div class="card">
+            <h3>⚡ Fast</h3>
+            <p>Simple and efficient.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Creative</h3>
+            <p>Modern and attractive design.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Responsive</h3>
+            <p>Works on different screen sizes.</p>
+        </div>
+    </div>
+
+    <footer>© 2026 WebStart</footer>
+
+    <script>
+        function welcome() {
+            document.getElementById("message").innerText =
+                "Welcome to WebStart! 🚀";
+        }
+    </script>
+
+</body>
+</html>
